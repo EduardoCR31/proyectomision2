@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CARTELERA DE CINE </title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/styleSwiper.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <header>
@@ -51,15 +54,37 @@
     <h1>INICIO</h1>
     <p id="intro">Abajo podras encontrar nuestra cartelera para este mes, como siempre puedes encontrar abajo los diferentes generos.</p>
    
-   
-</section>
-    
     <section class="trailers">
         <h3>CATEGORIAS</h3>
         
         <div class="container2">
+
+
+            <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">ACCION<a href="accion.html"><img src="IMG/ACCION.jpeg" alt width="30px" height="30px"></a></div> 
+            <div class="swiper-slide">ANIMADAS<a href="animadas.html"><img src="IMG/ANIMACION.jpeg" alt width="30px" height="30px"></a></div>
+            <div class="swiper-slide">COMEDIA<a href="comedia.html"><img src="IMG/COMEDIA.jpeg" alt width="30px" height="30px"></a></div>
+            <div class="swiper-slide">HORROR<a href="horror.html"><img src="IMG/HORROR.jpeg" alt width="30px" height="30px"></a></div>
+        </div>
+    </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+     
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="APP JS/appswiper.js"></script>
         
-            <div class="trailer">
+            <!-- <div class="trailer">
                 <a href="animadas.html">
                 <img src="IMG/ANIMACION.jpeg" class="imgsource" >
                 </a>
@@ -90,11 +115,14 @@
                 </a>
                 <h4>COMEDIA</h4>
                 
-            </div>
+            </div> -->
+
+        </div>
+    </section>
         
 
 
-</div>
+
 <section class="comentario">
     En la siguiente sección será posible dejar sus comentarios y recomendaciones para las peliculas que deseen en nuestra cartelera 
 </section>
