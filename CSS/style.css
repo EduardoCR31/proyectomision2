@@ -22,7 +22,7 @@
 }
 
 .logo {
-    max-width: 180px; /* Ancho máximo de la imagen */
+    max-width: 190px; /* Ancho máximo de la imagen */
     height: auto; /* Altura automática para mantener la proporción */
     margin: 0 20px;
         
