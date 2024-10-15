@@ -1,0 +1,361 @@
+ 
+.container2{
+    transform: scale(0.8);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    justify-content: center;
+    justify-self: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contenedorencabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #0fb14d; */
+    color: white;
+    width: 100vw; /* Se extiende por todo el ancho de la ventana */
+    padding:  20px; 
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.logo {
+    max-width: 180px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin: 0 20px;
+        
+}
+header { 
+    
+    width: 100vw; /* Asegura que el encabezado cubra el 100% del ancho */
+    height: 120px;
+    padding: 0;
+    margin: 0; /* Elimina márgenes para que se expanda correctamente */
+    background-color: #a4b9be;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgsource{
+    width: 90%;
+    height: 90%;
+    border-radius: 5% ;
+
+}
+.imgsource:hover{
+    transform: scale(1.2) rotateY(10deg); /* Efecto 3D y aumento de tamaño */
+    opacity: 1; /* Cambia opacidad al pasar el cursor */
+    box-shadow: 0vw 10vw 20vw rgba(0, 0, 0, 0.5); /* Sombra más fuerte */
+    border-radius: 5%; 
+
+}
+.trailers h3{
+    color: rgb(255, 253, 253);
+    text-align: center;
+}
+
+.encabezado{
+    object-position: center;
+    text-align: center; 
+    display: inline;   
+}
+
+.encabezado h1{
+    color: rgb(140, 39, 39);
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    text-align: center;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: rgb(222, 19, 134);
+    text-decoration: none;
+}
+a:hover{
+    /*background-color: #fa0000;*/
+    color: rgb(255, 255, 255);
+    }
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ .trailer {
+     width: 25vw;
+     padding: 10px;
+     background: #7b6f75;
+     border: 2px solid vw#9b8fa1;
+     text-align: center;
+     border-radius: 5% ;
+     color: #efdddd;
+}
+body{
+    background-color: rgb(72, 63, 63);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+section{
+    color: #fffdfd;
+}
+
+
+
+
+iframe {
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    image-orientation: flip center;
+    border-radius: 5%;
+    width: 25vw;
+    height: 25vw;
+}
+iframe:hover {
+    transform: scale(1.2) rotateY(10deg); /* Efecto 3D y aumento de tamaño */
+    opacity: 1; /* Cambia opacidad al pasar el cursor */
+    box-shadow: 0vw 10vw 20vw rgba(0, 0, 0, 0.5); /* Sombra más fuerte */
+    border-radius: 5%;  
+}
+.info{
+    object-position: center;
+    text-align: center; 
+    display: inline;   
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    display: inline;
+    margin: 0 10px;
+}
+ul li a {
+    color: rgb(19, 19, 187);
+    text-decoration: none;
+}
+.since{
+    object-position: center;
+    text-align: center;
+}
+.coment {
+    justify-self: auto;
+
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+
+
+
+.boton-menu {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    gap: 2px;
+    border-radius: 5%;
+}
+
+.boton-menu div {
+    background-color: white;
+    height: 3px;
+    gap: 2px;
+    width: 100%;
+   
+
+}
+
+/*.boton-menu:hover {
+    background-color: #555;
+}*/
+
+/* Estilo del contenedor del menú */
+.menu-contenedor {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+/* Estilo del menú desplegable (oculto por defecto) */
+.menu-desplegable {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #444;
+    min-width: 160px;
+    width: 100%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Estilos para los enlaces del menú */
+.menu-desplegable a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-desplegable a:hover {
+    background-color: #555;
+}
+
+/* Mostrar el menú cuando el contenedor tiene la clase 'mostrar' */
+.menu-contenedor.mostrar .menu-desplegable {
+    display: block;
+}
+ /* Media queries para pantallas pequeñas */
+ @media (max-width: 600px) {
+    /* Tamaño más pequeño del botón en móviles */
+    .boton-menu {
+        width: 24px;
+        height: 20px;
+    }
+
+    /* Hacer que el menú ocupe el 100% de la pantalla en móviles */
+    .menu-desplegable {
+        width: 100vw;
+        position: static; /* Para que ocupe toda la pantalla */
+    }
+
+    .menu-desplegable a {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+/* Media queries para pantallas más grandes */
+@media (min-width: 601px) {
+    /* Tamaño más grande del botón en pantallas grandes */
+    .boton-menu {
+        width: 40px;
+        height: 30px;
+    }
+
+    .menu-desplegable {
+        min-width: 200px;
+    }
+
+    .menu-desplegable a {
+        padding: 15px 20px;
+    }
+}
+
+.comentario {
+    size-adjust: auto;
+    color: #000000;
+}
+
+.encuest {
+    color: #000000;
+}
+/* 
+.sesion{
+    background-color: rgb(230, 227, 40);
+    background-size: cover;
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 970px;
+    margin-right: 0px;
+    border-radius: 50px;
+    font-family: Arial;
+}
+.registrate{
+    background-color: rgb(230, 227, 40);
+    background-size: cover;
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 970px;
+    margin-right: 0px;
+    border-radius: 50px;
+    font-family: Arial;
+} */
+
+.recuadrocuenta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Ocupa toda la altura de la pantalla */
+    gap: 10px;
+    margin: 0 20px;
+}
+
+/* Estilos para los bloques de sesión y registro */
+.sesion, .registrate {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Hover en enlaces para mejor interacción */
+a:hover {
+    color: #f1c40f;
+}
+
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 600px) {
+    .recuadrocuenta {
+        flex-direction: column; /* Pone los botones uno debajo del otro */
+    }
+}
+
+
+
+.like-btn {
+    background-color: #ff4081;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.like-btn:hover {
+    background-color: #ff1a66;
+}
+
+#favoritos-section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; 
+}

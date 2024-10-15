@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARTELERA DE CINE </title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="contenedorencabezado"> 
+        <div class="menu-contenedor">
+            <button class="boton-menu" onclick="mostrarMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+                <div class="menu-desplegable">
+               
+                        
+                            <a href="#" onclick="navegar('index.html')"> INICIO</a>
+                            
+                            <a href="#" onclick="navegar('animadas.html')">ANIMADAS</a>
+                            
+                            <a href="#" onclick="navegar('accion.html')">ACCION</a>
+                            
+                            <a href="#" onclick="navegar('horror.html')">HORROR</a>
+                            
+                            <a href="#" onclick="navegar('comedia.html')">COMEDIA</a>
+
+                            
+                </div>
+            
+        </div>
+     <div class="logo1"><img class="logo" src="IMG/logo-cinema.png" alt="Cinema Paraiso">
+</div>
+
+<div class="recuadrocuenta">
+    <div class="sesion">
+        <a href="../EduardoCR31.github.io-main/iniciasesion.html">Inicia Sesión</a>
+    </div>
+
+    <div class="registrate">
+        <a href= "../EduardoCR31.github.io-main/formulario.html">Registrate</a>
+    </div>
+</div>
+
+</div>
+    </header>
+    <section class="encabezado"></section>
+    <h1>INICIO</h1>
+    <p id="intro">Abajo podras encontrar nuestra cartelera para este mes, como siempre puedes encontrar abajo los diferentes generos.</p>
+   
+   
+</section>
+    
+    <section class="trailers">
+        <h3>CATEGORIAS</h3>
+        
+        <div class="container2">
+        
+            <div class="trailer">
+                <a href="animadas.html">
+                <img src="IMG/ANIMACION.jpeg" class="imgsource" >
+                </a>
+
+                <h4>ANIMADAS</h4>
+                        
+            </div>
+           
+            <div class="trailer">
+                <a href="accion.html">
+                <img src="IMG/ACCION.jpeg" class="imgsource" >
+                </a>
+                <h4>ACCION</h4>
+                
+            </div>
+            
+            <div class="trailer">
+                <a href="horror.html">
+                <img src="IMG/HORROR.jpeg" class="imgsource" >
+                </a>
+                <h4>HORROR</h4>
+                
+            </div>
+            
+            <div class="trailer">
+                <a href="comedia.html">
+                <img src="IMG/COMEDIA.jpeg" class="imgsource" >
+                </a>
+                <h4>COMEDIA</h4>
+                
+            </div>
+        
+
+
+</div>
+<section class="comentario">
+    En la siguiente sección será posible dejar sus comentarios y recomendaciones para las peliculas que deseen en nuestra cartelera 
+</section>
+
+<form class="encuest" id="encuesta">
+    <label for="fname">Nombre:</label><br>
+    <input type="text" id="fname" name="fname" ><br>
+    <label for="pelifav"> Pelicula Favorita:</label><br>
+    <input type="text" id="pelifav" name="pelifav" ><br>
+    <span id="errorMensaje" style="color:red;"></span><br><br>
+    <label for="coment">comentario:</label><br>
+    <textarea id="coment" name="coment" rows="auto" cols="100vw"></textarea>
+  <br><br>
+  
+    <button id="enviar"  type="submit" value="Enviar">enviar</button>
+  </form> 
+  
+<div class="info">
+    <ul class="footer">
+        <li><a href="informacion-legal">Información Legal</a>
+        </li>
+        <li><a href="/acerca-de-cineco">Acerca de Cinema Paraiso</a>
+        </li>
+        <li><a href="/contactanos-pqrs">Contáctanos PQRS</a>
+        </li>
+        <li><a href="/preguntas-frecuentes">Preguntas Frecuentes</a>
+        </li>
+    </ul>
+</div>
+<p class="since">&copy Cinema Paraiso. since 2024</p>
+</section>
+<script src="APP JS/app.js"></script>
+</body>
+</html>
